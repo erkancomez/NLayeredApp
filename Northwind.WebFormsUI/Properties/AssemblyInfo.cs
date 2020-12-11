@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Bir bütünleştirilmiş koda ilişkin Genel Bilgiler aşağıdaki öznitelikler kümesiyle
 // denetlenir. Bütünleştirilmiş kod ile ilişkili bilgileri değiştirmek için
 // bu öznitelik değerlerini değiştirin.
-[assembly: AssemblyTitle("Northwind.Business")]
+[assembly: AssemblyTitle("Northwind.WebFormsUI")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Northwind.Business")]
+[assembly: AssemblyProduct("Northwind.WebFormsUI")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Bu proje COM'un kullanımına sunulursa, aşağıdaki GUID tür kitaplığının kimliği içindir
-[assembly: Guid("2857d342-e0d9-49bd-90e2-81e8aa0a923e")]
+[assembly: Guid("7fb55b87-ab1f-41cd-bd5f-b86d364bfc75")]
 
 // Bir derlemenin sürüm bilgileri aşağıdaki dört değerden oluşur:
 //

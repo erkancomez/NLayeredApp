@@ -6,11 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Northwind.DataAccess.Concrete
+namespace Northwind.DataAccess.Concrete.EntityFramework
 {
-    class NorthwindContext:DbContext
+    public class NorthwindContext:DbContext
     {
         public DbSet<Product> Products { get; set; }
-        ProductManager productManager = new ProductManager();
+        public DbSet<Category> Categories { get; set; }
     }
 }

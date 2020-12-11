@@ -47,5 +47,15 @@
   <ItemGroup>
     <Folder Include="Abstract\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Northwind.DataAccess\Northwind.DataAccess.csproj">
+      <Project>{DE762A04-EDCE-4E5A-88F8-32A7D722E45D}</Project>
+      <Name>Northwind.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Northwind.Entities\Northwind.Entities.csproj">
+      <Project>{921379CB-4426-4E99-9373-61C5DAEB412B}</Project>
+      <Name>Northwind.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
