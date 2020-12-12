@@ -1,4 +1,7 @@
-﻿using Northwind.Business.Abstract;
+﻿using FluentValidation;
+using Northwind.Business.Abstract;
+using Northwind.Business.Utilities;
+using Northwind.Business.ValidationRules.FluentValidation;
 using Northwind.DataAccess;
 using Northwind.DataAccess.Abstract;
 using Northwind.DataAccess.Concrete.EntityFramework;
@@ -24,6 +27,7 @@ namespace Northwind.Business.Concrete
 
         public void Add(Product product)
         {
+            ValidationTools.Validate(new ProductValidator(), product);
             _productDal.Add(product);
         }
 
@@ -33,7 +37,7 @@ namespace Northwind.Business.Concrete
             {
                 _productDal.Delete(product);
             }
-            catch (DbUpdateException e)
+            catch (DbUpdateException)
             {
                 throw new Exception("Silme gerçekleşemedi");
             }            
@@ -50,6 +54,7 @@ namespace Northwind.Business.Concrete
 
         public void Update(Product product)
         {
+            ValidationTools.Validate(new ProductValidator(), product);
             _productDal.Update(product);
         }
     }
